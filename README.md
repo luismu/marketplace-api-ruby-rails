@@ -1,12 +1,4 @@
-#market place api
-
-author mparaiso <mparaiso@online.fr>
-
-license Apache
-
-[![Build Status](https://travis-ci.org/mediactiv/marketplace-api-ruby-rails.svg?branch=5-Authenticating-users)](https://travis-ci.org/mediactiv/marketplace-api-ruby-rails)
-
-market place is an exemple of a REST api implemented with Rails based on the following book : http://apionrails.icalialabs.com
+##market place api
 
 ## installation 
 
@@ -14,13 +6,12 @@ market place is an exemple of a REST api implemented with Rails based on the fol
 
 - ruby 2.1.1
 
-- git
 
 ### usage
 
-- clone the repository then **cd** to the repository folder
-
 in the command line :
+
+- bundle install
 
 - rake db:migrate
 
