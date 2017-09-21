@@ -9,9 +9,6 @@
 
 ##  Installing
 
-
-That’s it! Your app will be up and running at http://myapp.dev/
-
 in the command line :
 
 - bundle install
