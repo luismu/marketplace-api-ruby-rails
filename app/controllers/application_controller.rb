@@ -5,8 +5,7 @@ class ApplicationController < ActionController::Base
   include Authenticable
 
   def index
-    render text: 'Market Place API ruby on rails - Luis Murillo\n' +
-                 'MAX store'
+    render text: 'Market Place API ruby on rails - Luis Murillo MAX store'
   end
 
   protected

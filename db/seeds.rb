@@ -7,3 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 20.times { FactoryGirl.create :product }
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') 
+
+if Rails.env.development?
+end

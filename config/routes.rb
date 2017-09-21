@@ -1,6 +1,8 @@
 require 'api_constraints'
 
 MarketPlaceApi::Application.routes.draw do
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   # mount SabisuRails::Engine => "/sabisu_rails"
   devise_for :users ,skip: [:session,:password,:registration]
   root 'application#index'
@@ -10,7 +12,7 @@ MarketPlaceApi::Application.routes.draw do
       # list the resources here
       resources :users, only: [:show,:create,:update,:destroy] do
         # product creation and deletion has to be accessed through user
-        resources :products,only:[:create,:update,:destroy,:show,:index]
+        resources :products,only:[:create,:update,:show,:index]
       end
       resources :sessions, only: [:create,:destroy]
       resources :products, only: [:index,:show]
